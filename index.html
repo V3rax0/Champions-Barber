@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <title>Champions Barber</title>
-    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -17,60 +19,86 @@
             <nav>
                 <ul class="menu">
                     <li class="menu__item"><a href="#">Home</a></li>
-                    <li class="menu__item"><a href="#">Galeria</a></li>
-                    <li class="menu__item"><a href="#">Servicios</a></li>
-                    <li class="menu__item"><a href="#">Barberos</a></li>
-                    <li class="menu__item"><a href="#">Contactenos</a></li>
-                    <li class="menu__item"><a href="#">Acerca de nosotros</a></li>
+                    <li class="menu__item"><a href="#galeria">Galeria</a></li>
+                    <li class="menu__item"><a href="#servicios">Servicios</a></li>
+                    <li class="menu__item"><a href="#barberos">Barberos</a></li>
+                    <li class="menu__item"><a href="#agendarme">Contactenos</a></li>
+                    <li class="menu__item"><a href="#aboutme">Acerca de nosotros</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!--Slideshow-->
-        <section class="slideShow">
-            <img src="./img/left_arrow.svg" alt="Ir hacía atrás">
-            <img src="./img/right_arrow.svg" alt="Ir hacía adelante">
-            <h2 class="slideShow__titulo">Champions Barber</h2>
-            <h4 class="slideShow__lema">Cuidando tu estetica</h4>
-            <a class="slideShow__agendarme" href="#">Agendarme</a>
+        <!--Fotos iniciales-->
+        <section class="muestra-trabajos">
+            <h2 class="muestra-trabajos__titulo">Champions Barber</h2>
+            <h4 class="muestra-trabajos__lema">Cuidando tu estetica</h4>
+            <a href="#agendarme">Agendarme</a>
         </section>
 
         <!--Galeria-->
-        <section class="galeria">
+        <section class="galeria" id="galeria">
 
         </section>
 
         <!--Servicios-->
-        <section class="servicios">
+        <section class="servicios" id="servicios">
 
         </section>
 
         <!--Barberos-->
-        <section class="barberos">
+        <section class="barberos" id="barberos">
 
         </section>
 
         <!--Contactenos-->
-        <section class="contactenos">
+        <section class="contactenos" id="agendarme">
 
         </section>
 
         <!--Acerca de nosotros-->
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
 
         </section>
 
         <!--Footer-->
         <footer class="footer">
+            <!--Enlace a las redes sociales-->
+            <ul class="footer__redes">
+                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/facebook.svg" alt="Facebook" width="50px"></a></li>
+                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/youtube.svg" alt="Youtube" width="50px"></a></li>
+                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/twitter.svg" alt="Twitter" width="50px"></a></li>
+                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/instagram.svg" alt="Instagram" width="50px"></a></li>
+            </ul>
+            <!--Banner del footer-->
+            <div class="footer__banner">
+                <img src="./img/banner_footer.png" alt="Banner" class="banner__footer">
+            </div>
+            <!--Newsletter-->
+            <div class="newsletter">
+                <form class="newsletter__form" id="newsletter__form">
+                    <legend>¿Te gustaría recibir nuestras novedades?</legend>
+                    <input type="text" id="email" class="newsletter__input">
+                    <input type="submit" value="Enviar" class="newsletter__button" id="newsletter__button">
+                </form>
+            </div>
+            <!--Copyright-->
             <p footer__copyright>Copyright &copy Champions Barber. All rigth reserved</p>
         </footer>
 
         <!--Botones fijos en la pantalla-->
         <div class="botones">
-            <a href="tel:3232322323" target="_blank"><img src="./img/telefono.png" alt="telefono" width="80px"></img></a>
-            <a href="https://wa.link/kw9tla" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp" width="80px"></a>
+            <a href="tel:3232322323" target="_blank"><img src="./img/telefono.png" alt="telefono"
+                    width="80px"></img></a>
+            <a href="https://wa.link/kw9tla" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp"
+                    width="80px"></a>
         </div>
     </main>
-    <script type="module" src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <!--Js para emailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('gN9YyNOGpp5Nhb0fR')
+    </script>
 </body>
+
 </html>
