@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <title>Champions Barber</title>
-
+        <!--Js para emailJS-->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+        emailjs.init('bnzMcoPO2phJIbqdM')
+      </script>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -77,7 +83,7 @@
             <div class="newsletter">
                 <form class="newsletter__form" id="newsletter__form">
                     <legend>¿Te gustaría recibir nuestras novedades?</legend>
-                    <input type="text" id="email" class="newsletter__input">
+                    <input type="text" name="email" id="email" placeholder="juanperez@example.com">
                     <input type="submit" value="Enviar" class="newsletter__button" id="newsletter__button">
                 </form>
             </div>
@@ -94,11 +100,6 @@
         </div>
     </main>
     <script src="./js/main.js"></script>
-    <!--Js para emailJS-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        emailjs.init('gN9YyNOGpp5Nhb0fR')
-    </script>
 </body>
 
 </html>
