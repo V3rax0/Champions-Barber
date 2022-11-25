@@ -1,4 +1,5 @@
 const buttonEnviar = document.getElementById("newsletter__button");
+const inputEmail = document.getElementById("newsletter_email")
 //EmailJS
 document.getElementById('newsletter__form')
     .addEventListener('submit', function(event) {
