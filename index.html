@@ -13,8 +13,9 @@
       <script type="text/javascript">
         emailjs.init('bnzMcoPO2phJIbqdM')
       </script>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!--<link rel="stylesheet" href="./css/reset.css">-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendar.css">
 </head>
 
 <body>
@@ -35,9 +36,9 @@
         </header>
 
         <!--Slide Show-->
-        <section class="slide">
-            <h2 class="slide__titulo">Champions Barber</h2>
-            <h4 class="slide__lema">Cuidando tu estetica</h4>
+        <section class="slideshow">
+            <h2 class="slideshow__titulo">Champions Barber</h2>
+            <h4 class="slideshow__lema">Cuidando tu estetica</h4>
             <a href="#agendarme">Agendarme</a>
         </section>
 
@@ -84,7 +85,63 @@
 
         <!--Contactenos-->
         <section class="contactenos" id="agendarme">
+            <!--Calendario-->
+            <div class="contactenos__calendario">
+                <div class="calendar" id="calendar">
+                </div>
+            </div>
 
+            <div class="contactenos__horario">
+                
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td> 08AM ~ 05PM</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td> 08AM ~ 05PM</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td> 08AM ~ 05PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td> 01PM ~ 08PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <form action="" class="contactenos__formulario">
+                <label class="contactenos__formulario__titulo" for="nombres">Nombre</label>
+                <input type="text" name="nombres" id="contactenos__formulario__titulo__nombres">
+                <fieldset class="servicios">
+                    <legend>Servicio</legend>
+                    <select>
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+    
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="contactenos__formulario__titulo__nombres">
+
+                <label for="detalles">Detalles</label>
+                <textarea name="detalles" id="contactenos__formulario__titulo__detalles" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
 
         <!--Acerca de nosotros-->
@@ -152,6 +209,17 @@
         </div>
     </main>
     <script src="./js/main.js"></script>
+
+    <!--Js Calendar-->
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script  type="text/javascript" src="./js/calendar.js"></script>
+    <script type="text/javascript">
+        let calendar = new Calendar('calendar');
+        calendar.getElement().addEventListener('change', e => {
+            console.log(calendar.value().format('LLL'));
+        });
+    </script>
 </body>
 
 </html>
