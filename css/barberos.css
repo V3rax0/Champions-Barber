@@ -1,0 +1,41 @@
+
+.persona__imagen--carlos {
+    background: url(../img/barberos/people1.jpg);
+}
+
+.persona__imagen--david {
+    background: url(../img/barberos/people3.jpg);
+}
+
+.persona__imagen--maicol {
+    background: url(../img/barberos/people2.jpg);;
+}
+.persona__imagen--jhoan {
+    background: url(../img/barberos/people3.jpg);
+}
+
+.persona__imagen--brayan {
+    background: url(../img/barberos/people2.jpg);;
+}
+
+.persona__imagen {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.persona__funcion {
+    color: #595959;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+
+.persona__nombre {
+    color: #000000;
+    font-size: 2rem;
+    margin: 1rem 0;
+}

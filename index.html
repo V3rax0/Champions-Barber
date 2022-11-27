@@ -1,225 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
     <title>Champions Barber</title>
-        <!--Js para emailJS-->
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script type="text/javascript">
-        emailjs.init('bnzMcoPO2phJIbqdM')
-      </script>
+    <!--Js para emailJS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("bnzMcoPO2phJIbqdM");
+    </script>
     <!--<link rel="stylesheet" href="./css/reset.css">-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/calendar.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/calendar.css" />
+    <link rel="stylesheet" href="./css/barberos.css" />
+    <link rel="stylesheet" href="./css/servicios.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <!--Menu-->
-        <header class="head">
-            <img src="./img/logo.svg" alt="logo de la barbería" class="head__logo" width="10%">
-            <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a href="#">Home</a></li>
-                    <li class="menu__item"><a href="#galeria">Galeria</a></li>
-                    <li class="menu__item"><a href="#servicios">Servicios</a></li>
-                    <li class="menu__item"><a href="#barberos">Barberos</a></li>
-                    <li class="menu__item"><a href="#agendarme">Contactenos</a></li>
-                    <li class="menu__item"><a href="#aboutme">Acerca de nosotros</a></li>
-                </ul>
-            </nav>
-        </header>
+      <!--Menu-->
+      <header class="head">
+        <a href="#"
+          ><img
+            src="./img/logo.svg"
+            alt="logo de la barbería"
+            class="head__logo"
+            width="10%"
+        /></a>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#galeria">Galeria</a></li>
+            <li class="menu__item"><a href="#servicios">Servicios</a></li>
+            <li class="menu__item"><a href="#barberos">Barberos</a></li>
+            <li class="menu__item"><a href="#agendarme">Contactenos</a></li>
+            <li class="menu__item">
+              <a href="#aboutme">Acerca de nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <!--Slide Show-->
-        <section class="slideshow">
-            <h2 class="slideshow__titulo">Champions Barber</h2>
-            <h4 class="slideshow__lema">Cuidando tu estetica</h4>
-            <a href="#agendarme">Agendarme</a>
-        </section>
+      <!--Slide Show-->
+      <section class="slideshow">
+        <h2 class="slideshow__titulo">Champions Barber</h2>
+        <h4 class="slideshow__lema">Cuidando tu estetica</h4>
+        <a href="#agendarme">Agendarme</a>
+      </section>
 
-        <!--Galeria-->
-        <section class="galeria" id="galeria">
+      <!--Galeria-->
+      <section class="galeria" id="galeria"></section>
 
-        </section>
+      <!--Servicios-->
+      <section class="servicios" id="servicios">
+        <ul class="servicios__listado">
+          <li class="servicio__elemento">
+            <h2 class="servicio__titulo">Cabello</h2>
+            <img src="./img/servicio/cabello.jpg" alt="Cabello" />
+            <p class="productoDes">Con tijera o máquina, a gusto del cliente</p>
+            <p class="productoPrecio">$ 10,000.00</p>
+          </li>
+          <li class="servicio__elemento">
+            <h2 class="servicio__titulo">Barba</h2>
+            <img src="./img/servicio/barba.jpg" alt="Barba" />
+            <p class="productoDes">Corte y diseño profesional de barba</p>
+            <p class="productoPrecio">$ 12,000.00</p>
+          </li>
+          <li class="servicio__elemento">
+            <h2 class="servicio__titulo">Cabello + Barba</h2>
+            <img src="./img/servicio/cabello+barba.jpg" alt="Cabello + Barba" />
+            <p class="productoDes">Paquete completo de cabello y barba</p>
+            <p class="productoPrecio">$ 15,000.00</p>
+          </li>
+        </ul>
+      </section>
 
-        <!--Servicios-->
-        <section class="servicios" id="servicios">
-
-        </section>
-
-        <!--Barberos-->
-        <section class="barberos" id="barberos">
-            <div class="personas">
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--carlos"></div>
-                    <span class="persona__nombre">Carlos</span>
-                    <span class="persona__funcion">Barbero</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--david"></div>
-                    <span class="persona__nombre">David</span>
-                    <span class="persona__funcion">Estilista</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--maicol"></div>
-                    <span class="persona__nombre">Maicol</span>
-                    <span class="persona__funcion">Profesional Barber</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--jhoan"></div>
-                    <span class="persona__nombre">Jhoan</span>
-                    <span class="persona__funcion">Profesional Barber</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--brayan"></div>
-                    <span class="persona__nombre">Brayan</span>
-                    <span class="persona__funcion">Esperto en Masajes</span>
-                </div>
-            </div>
-        </section>
-
-        <!--Contactenos-->
-        <section class="contactenos" id="agendarme">
-            <!--Calendario-->
-            <div class="contactenos__calendario">
-                <div class="calendar" id="calendar">
-                </div>
-            </div>
-
-            <div class="contactenos__horario">
-                
-            <table>
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td> 08AM ~ 05PM</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td> 08AM ~ 05PM</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td> 08AM ~ 05PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sabado</td>
-                        <td> 01PM ~ 08PM</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-
-            <form action="" class="contactenos__formulario">
-                <label class="contactenos__formulario__titulo" for="nombres">Nombre</label>
-                <input type="text" name="nombres" id="contactenos__formulario__titulo__nombres">
-                <fieldset class="servicios">
-                    <legend>Servicio</legend>
-                    <select>
-                        <option value="">Mañana</option>
-                        <option value="">Tarde</option>
-                        <option value="">Noche</option>
-                    </select>
-                </fieldset>
-    
-
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" id="contactenos__formulario__titulo__nombres">
-
-                <label for="detalles">Detalles</label>
-                <textarea name="detalles" id="contactenos__formulario__titulo__detalles" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!--Acerca de nosotros-->
-        <section class="aboutme" id="aboutme">
-            <div class="aboutme">
-                <h2 class="aboutme__titulo">Sobre la barbería</h2>
-                <div class="aboutme-descripcion">
-                    <img src="./img/utensilios.jpg" alt="utensilios" class="aboutme__img" width="100px">
-                    <p class="aboutme__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repellendus explicabo vitae distinctio, nesciunt, doloremque, possimus velit deleniti asperiores tenetur exercitationem hic. Ducimus non corporis libero modi minus quis nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat voluptatem at culpa, voluptas ullam eum veniam ex. Dicta fugiat rem vero provident soluta perferendis iusto enim expedita dignissimos neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, mollitia commodi labore minima sunt dolores reprehenderit voluptatum suscipit assumenda, ad magnam ratione earum cupiditate aspernatur doloribus voluptatem! Deleniti, eos accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam architecto, natus recusandae, voluptatibus sunt, rem obcaecati repudiandae id molestiae sit officia laborum dignissimos neque omnis dicta? Repudiandae laboriosam iusto eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perspiciatis praesentium totam blanditiis deserunt accusantium quia inventore est illum quas ea laborum eius nihil et, quod ex molestias. Mollitia, eveniet?</p>
-                </div>
-            </div>
-
-            <div class="mision-vision">
-                <h2 class="mision-vision__titulo">Mision</h2>
-                <p class="mision-vision descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque officia cum debitis ut, omnis blanditiis sint eum iusto dolore aut doloremque sunt temporibus dicta consequatur totam deserunt aspernatur repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam nisi quasi quibusdam, consectetur assumenda maxime tempore voluptatum odio excepturi dolores, veritatis itaque obcaecati at dolor eligendi voluptate molestias ab.</p>
-                <h2 class="mision-vision__titulo">Vision</h2>
-                <p class="mision-vision descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque officia cum debitis ut, omnis blanditiis sint eum iusto dolore aut doloremque sunt temporibus dicta consequatur totam deserunt aspernatur repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, labore vitae eum voluptatibus ab temporibus veritatis ullam aperiam ipsa fugit quisquam dignissimos sequi quia. Soluta consequuntur rem perspiciatis temporibus accusamus?</p>
-            </div>
-
-            <div class="ubicacion">
-                <h2 class="ubicacion__titulo">Ubicación</h2>
-                <p class="ubicacion___descripcion">Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
-            
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.594518837465!2d-75.45194395427826!3d8.954721877169725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5963d205898339%3A0x78ff109133f4d125!2sChampions%20Barberia%20Sahagun!5e0!3m2!1ses!2sco!4v1669347626133!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__ubicacion"></iframe>
-                </div>
-
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8pWtdanVz3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__demostracion"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!--Footer-->
-        <footer class="footer">
-            <!--Enlace a las redes sociales-->
-            <ul class="footer__redes">
-                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/facebook.svg" alt="Facebook" width="50px"></a></li>
-                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/youtube.svg" alt="Youtube" width="50px"></a></li>
-                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/twitter.svg" alt="Twitter" width="50px"></a></li>
-                <li><a href="#" class="footer__redes_enlace"><img src="./img/redes/instagram.svg" alt="Instagram" width="50px"></a></li>
-            </ul>
-            <!--Banner del footer-->
-            <div class="footer__banner">
-                <img src="./img/banner_footer.png" alt="Banner" class="banner__footer">
-            </div>
-            <!--Newsletter-->
-            <div class="newsletter">
-                <form class="newsletter__form" id="newsletter__form">
-                    <legend>¿Te gustaría recibir nuestras novedades?</legend>
-                    <input type="email" name="email" id="newsletter_email" placeholder="juanperez@example.com" required>
-                    <input type="submit" value="Enviar" class="newsletter__button" id="newsletter__button">
-                </form>
-            </div>
-            <!--Copyright-->
-            <p footer__copyright>Copyright &copy Champions Barber. All rigth reserved</p>
-        </footer>
-
-        <!--Botones fijos en la pantalla-->
-        <div class="botones">
-            <a href="tel:3232322323" target="_blank"><img src="./img/telefono.png" alt="telefono"
-                    width="80px"></img></a>
-            <a href="https://wa.link/kw9tla" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp"
-                    width="80px"></a>
+      <!--Barberos-->
+      <section class="barberos" id="barberos">
+        <div class="personas">
+          <div class="persona">
+            <div class="persona__imagen persona__imagen--carlos"></div>
+            <span class="persona__nombre">Carlos</span>
+            <span class="persona__funcion">Barbero</span>
+          </div>
+          <div class="persona">
+            <div class="persona__imagen persona__imagen--david"></div>
+            <span class="persona__nombre">David</span>
+            <span class="persona__funcion">Estilista</span>
+          </div>
+          <div class="persona">
+            <div class="persona__imagen persona__imagen--maicol"></div>
+            <span class="persona__nombre">Maicol</span>
+            <span class="persona__funcion">Profesional Barber</span>
+          </div>
+          <div class="persona">
+            <div class="persona__imagen persona__imagen--jhoan"></div>
+            <span class="persona__nombre">Jhoan</span>
+            <span class="persona__funcion">Profesional Barber</span>
+          </div>
+          <div class="persona">
+            <div class="persona__imagen persona__imagen--brayan"></div>
+            <span class="persona__nombre">Brayan</span>
+            <span class="persona__funcion">Esperto en Masajes</span>
+          </div>
         </div>
+      </section>
+
+      <!--Contactenos-->
+      <section class="contactenos" id="agendarme">
+        <!--Calendario-->
+        <div class="contactenos__calendario">
+          <div class="calendar" id="calendar"></div>
+        </div>
+        <!--horario-->
+        <div class="contactenos__horario">
+          <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>08AM ~ 05PM</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>08AM ~ 05PM</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>08AM ~ 05PM</td>
+              </tr>
+              <tr>
+                <td>Sabado</td>
+                <td>01PM ~ 08PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--formulario contacto-->
+        <form action="" class="contactenos__formulario">
+          <label class="contactenos__formulario__titulo" for="nombres"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            name="nombres"
+            id="contactenos__formulario__titulo__nombres"
+          />
+          <fieldset class="servicios">
+            <legend>Servicio</legend>
+            <select>
+              <option value="">Mañana</option>
+              <option value="">Tarde</option>
+              <option value="">Noche</option>
+            </select>
+          </fieldset>
+          <label for="telefono">Telefono</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="contactenos__formulario__titulo__nombres"
+          />
+          <label for="detalles">Detalles</label>
+          <textarea
+            name="detalles"
+            id="contactenos__formulario__titulo__detalles"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <!--Acerca de nosotros-->
+      <section class="aboutme" id="aboutme">
+        <div class="aboutme">
+          <h2 class="aboutme__titulo">Sobre la barbería</h2>
+          <div class="aboutme-descripcion">
+            <img
+              src="./img/utensilios.jpg"
+              alt="utensilios"
+              class="aboutme__img"
+              width="100px"
+            />
+            <p class="aboutme__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              repellendus explicabo vitae distinctio, nesciunt, doloremque,
+              possimus velit deleniti asperiores tenetur exercitationem hic.
+              Ducimus non corporis libero modi minus quis nihil? Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Nemo repellat
+              voluptatem at culpa, voluptas ullam eum veniam ex. Dicta fugiat
+              rem vero provident soluta perferendis iusto enim expedita
+              dignissimos neque. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Eaque, mollitia commodi labore minima sunt
+              dolores reprehenderit voluptatum suscipit assumenda, ad magnam
+              ratione earum cupiditate aspernatur doloribus voluptatem!
+              Deleniti, eos accusamus! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Quibusdam architecto, natus recusandae,
+              voluptatibus sunt, rem obcaecati repudiandae id molestiae sit
+              officia laborum dignissimos neque omnis dicta? Repudiandae
+              laboriosam iusto eius? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deleniti perspiciatis praesentium totam
+              blanditiis deserunt accusantium quia inventore est illum quas ea
+              laborum eius nihil et, quod ex molestias. Mollitia, eveniet?
+            </p>
+          </div>
+        </div>
+
+        <div class="mision-vision">
+          <h2 class="mision-vision__titulo">Mision</h2>
+          <p class="mision-vision descripcion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque
+            officia cum debitis ut, omnis blanditiis sint eum iusto dolore aut
+            doloremque sunt temporibus dicta consequatur totam deserunt
+            aspernatur repellat. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repudiandae veniam nisi quasi quibusdam,
+            consectetur assumenda maxime tempore voluptatum odio excepturi
+            dolores, veritatis itaque obcaecati at dolor eligendi voluptate
+            molestias ab.
+          </p>
+          <h2 class="mision-vision__titulo">Vision</h2>
+          <p class="mision-vision descripcion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque
+            officia cum debitis ut, omnis blanditiis sint eum iusto dolore aut
+            doloremque sunt temporibus dicta consequatur totam deserunt
+            aspernatur repellat. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Excepturi, labore vitae eum voluptatibus ab
+            temporibus veritatis ullam aperiam ipsa fugit quisquam dignissimos
+            sequi quia. Soluta consequuntur rem perspiciatis temporibus
+            accusamus?
+          </p>
+        </div>
+
+        <div class="ubicacion">
+          <h2 class="ubicacion__titulo">Ubicación</h2>
+          <p class="ubicacion___descripcion">
+            Nuestro establecimiento está ubicado en el corazón de la ciudad
+          </p>
+
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.594518837465!2d-75.45194395427826!3d8.954721877169725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5963d205898339%3A0x78ff109133f4d125!2sChampions%20Barberia%20Sahagun!5e0!3m2!1ses!2sco!4v1669347626133!5m2!1ses!2sco"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="mapa__ubicacion"
+            ></iframe>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8pWtdanVz3I"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video__demostracion"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <!--Enlace a las redes sociales-->
+        <ul class="footer__redes">
+          <li>
+            <a href="#" class="footer__redes_enlace"
+              ><img src="./img/redes/facebook.svg" alt="Facebook" width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__redes_enlace"
+              ><img src="./img/redes/youtube.svg" alt="Youtube" width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__redes_enlace"
+              ><img src="./img/redes/twitter.svg" alt="Twitter" width="50px"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__redes_enlace"
+              ><img
+                src="./img/redes/instagram.svg"
+                alt="Instagram"
+                width="50px"
+            /></a>
+          </li>
+        </ul>
+        <!--Banner del footer-->
+        <div class="footer__banner">
+          <img
+            src="./img/banner_footer.png"
+            alt="Banner"
+            class="banner__footer"
+          />
+        </div>
+        <!--Newsletter-->
+        <div class="newsletter">
+          <form class="newsletter__form" id="newsletter__form">
+            <legend>¿Te gustaría recibir nuestras novedades?</legend>
+            <input
+              type="email"
+              name="email"
+              id="newsletter_email"
+              placeholder="juanperez@example.com"
+              required
+            />
+            <input
+              type="submit"
+              value="Enviar"
+              class="newsletter__button"
+              id="newsletter__button"
+            />
+          </form>
+        </div>
+        <!--Copyright-->
+        <p footer__copyright>
+          Copyright &copy Champions Barber. All rigth reserved
+        </p>
+      </footer>
+
+      <!--Botones fijos en la pantalla-->
+      <div class="botones">
+        <a href="tel:3232322323" target="_blank"
+          ><img src="./img/telefono.png" alt="telefono" width="80px"
+        /></a>
+        <a href="https://wa.link/kw9tla" target="_blank"
+          ><img src="./img/whatsapp.png" alt="Whatsapp" width="80px"
+        /></a>
+      </div>
     </main>
     <script src="./js/main.js"></script>
 
     <!--Js Calendar-->
-    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
-    <script  type="text/javascript" src="./js/calendar.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"
+    ></script>
+    <script type="text/javascript" src="./js/calendar.js"></script>
     <script type="text/javascript">
-        let calendar = new Calendar('calendar');
-        calendar.getElement().addEventListener('change', e => {
-            console.log(calendar.value().format('LLL'));
-        });
+      let calendar = new Calendar("calendar");
+      calendar.getElement().addEventListener("change", (e) => {
+        console.log(calendar.value().format("LLL"));
+      });
     </script>
-</body>
-
+  </body>
 </html>
