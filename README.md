@@ -4,5 +4,5 @@
 **MomentJS**
 
 ## Metodologías
-__BEM__
-__ATOMIC DESIGN__ 
+- __BEM__
+- __ATOMIC DESIGN__ 
