@@ -1,7 +1,7 @@
 # Champions-Barber
 ## Librerias Usadas
-**EmailJS**
-**MomentJS**
+- **EmailJS**
+- **MomentJS**
 
 ## Metodologías
 - __BEM__
