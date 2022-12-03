@@ -16,6 +16,8 @@
     </script>
     <!--<link rel="stylesheet" href="./css/reset.css">-->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/calendar.css" />
     <link rel="stylesheet" href="./css/barberos.css" />
     <link rel="stylesheet" href="./css/servicios.css" />
@@ -31,17 +33,16 @@
             src="./img/logo.svg"
             alt="logo de la barbería"
             class="head__logo"
-            width="10%"
+            width="120px"
         /></a>
         <nav>
           <ul class="menu">
-            <li class="menu__item"><a href="#">Home</a></li>
-            <li class="menu__item"><a href="#galeria">Galeria</a></li>
-            <li class="menu__item"><a href="#servicios">Servicios</a></li>
-            <li class="menu__item"><a href="#barberos">Barberos</a></li>
-            <li class="menu__item"><a href="#agendarme">Contactenos</a></li>
-            <li class="menu__item">
-              <a href="#aboutme">Acerca de nosotros</a>
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#galeria">Galeria</a></li>
+            <li class="menu__item"><a class="menu__link" href="#servicios">Servicios</a></li>
+            <li class="menu__item"><a class="menu__link" href="#barberos">Barberos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#agendarme">Contactenos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#aboutme">Acerca de nosotros</a>
             </li>
           </ul>
         </nav>
@@ -49,9 +50,14 @@
 
       <!--Slide Show-->
       <section class="slideshow">
-        <h2 class="slideshow__titulo">Champions Barber</h2>
-        <h4 class="slideshow__lema">Cuidando tu estetica</h4>
-        <a href="#agendarme">Agendarme</a>
+
+        <div class="slidershow__atras botones-slide">&#60</div>
+
+        <div class="slidershow__adelante botones-slide">&#62</div>
+        <img src="./img/slideShow/slide1.jpg" alt="slide" class="slideshow__imgs" id="slidershow-img">
+          <h2 class="slideshow__titulo">Champions Barber</h2>
+          <h4 class="slideshow__lema">Cuidando tu estetica</h4>
+          <a href="#agendarme" class="slideshow__agendarme">Agendarme</a>
       </section>
 
       <!--Galeria-->
@@ -88,13 +94,19 @@
         />
 
         <img
-          src="./img/galeria/corte1.jpg"
-          alt="corte 1"
+          src="./img/galeria/corte2.jpg"
+          alt="corte 2"
           class="galeria__img"
         />
         <img
-          src="./img/galeria/corte2.jpg"
-          alt="corte 2"
+          src="./img/galeria/corte4.jpg"
+          alt="corte 4"
+          class="galeria__img"
+        />
+        <img src="./img/galeria/corte1.jpg" class="galeria__img" />
+        <img
+          src="./img/galeria/corte6.jpg"
+          alt="corte 6"
           class="galeria__img"
         />
         <img
@@ -103,18 +115,8 @@
           class="galeria__img"
         />
         <img
-          src="./img/galeria/corte4.jpg"
-          alt="corte 4"
-          class="galeria__img"
-        />
-        <img
           src="./img/galeria/corte5.jpg"
           alt="corte 5"
-          class="galeria__img"
-        />
-        <img
-          src="./img/galeria/corte6.jpg"
-          alt="corte 6"
           class="galeria__img"
         />
       </section>
@@ -428,5 +430,6 @@
         console.log(calendar.value().format("LLL"));
       });
     </script>
+        <script type="text/javascript" src="./js/slide.js"></script>
   </body>
 </html>
