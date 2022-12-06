@@ -1,3 +1,10 @@
+.barberos {
+    width:;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
 
 .persona__imagen--carlos {
     background: url(../img/barberos/people1.jpg);

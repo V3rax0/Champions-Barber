@@ -14,7 +14,8 @@
     <script type="text/javascript">
       emailjs.init("bnzMcoPO2phJIbqdM");
     </script>
-    <!--<link rel="stylesheet" href="./css/reset.css">-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/head.css">
     <link rel="stylesheet" href="./css/slideshow.css">
@@ -22,20 +23,21 @@
     <link rel="stylesheet" href="./css/barberos.css" />
     <link rel="stylesheet" href="./css/servicios.css" />
     <link rel="stylesheet" href="./css/galeria.css" />
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
 
   <body>
     <main>
       <!--Menu-->
-      <header class="head">
+      <header class="head container">
         <a href="#"
           ><img
-            src="./img/logo.svg"
+            src="./img/logo.png"
             alt="logo de la barbería"
             class="head__logo"
             width="120px"
         /></a>
-        <nav>
+        <nav class="head__navegacion">
           <ul class="menu">
             <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
             <li class="menu__item"><a class="menu__link" href="#galeria">Galeria</a></li>
@@ -49,11 +51,11 @@
       </header>
 
       <!--Slide Show-->
-      <section class="slideshow">
+      <section class="slideshow container">
 
         <div class="slidershow__atras botones-slide">&#60</div>
-
         <div class="slidershow__adelante botones-slide">&#62</div>
+
         <img src="./img/slideShow/slide1.jpg" alt="slide" class="slideshow__imgs" id="slidershow-img">
           <h2 class="slideshow__titulo">Champions Barber</h2>
           <h4 class="slideshow__lema">Cuidando tu estetica</h4>
@@ -61,7 +63,7 @@
       </section>
 
       <!--Galeria-->
-      <section class="galeria" id="galeria">
+      <section class="galeria " id="galeria">
         <img
           src="./img/galeria/corte1.jpg"
           alt="corte 1"
@@ -122,31 +124,37 @@
       </section>
 
       <!--Servicios-->
-      <section class="servicios" id="servicios">
+      <section class="servicios " id="servicios" >
         <ul class="servicios__listado">
           <li class="servicio__elemento">
             <h2 class="servicio__titulo">Cabello</h2>
-            <img src="./img/servicio/cabello.jpg" alt="Cabello" />
-            <p class="productoDes">Con tijera o máquina, a gusto del cliente</p>
-            <p class="productoPrecio">$ 10,000.00</p>
+            <article class="servicio__contenido">
+              <img src="./img/servicio/cabello.jpg" alt="Cabello" />
+              <p class="servicio__descripcion">Con tijera o máquina, a gusto del cliente</p>
+              <p class="servicio__precio"><em>$ 15,000</em></p>
+            </article>
           </li>
           <li class="servicio__elemento">
             <h2 class="servicio__titulo">Barba</h2>
-            <img src="./img/servicio/barba.jpg" alt="Barba" />
-            <p class="productoDes">Corte y diseño profesional de barba</p>
-            <p class="productoPrecio">$ 12,000.00</p>
+            <article class="servicio__contenido">
+              <img src="./img/servicio/barba.jpg" alt="Barba" />
+              <p class="servicio__descripcion">Corte y diseño profesional de barba</p>
+              <p class="servicio__precio"><em>$ 18,000</em></p>
+            </article>
           </li>
           <li class="servicio__elemento">
             <h2 class="servicio__titulo">Cabello + Barba</h2>
-            <img src="./img/servicio/cabello+barba.jpg" alt="Cabello + Barba" />
-            <p class="productoDes">Paquete completo de cabello y barba</p>
-            <p class="productoPrecio">$ 15,000.00</p>
+            <article class="servicio__contenido">
+              <img src="./img/servicio/cabello+barba.jpg" alt="Cabello + Barba" />
+              <p class="servicio__descripcion">Paquete completo de cabello y barba</p>
+              <p class="servicio__precio"><em>$ 28,000</em></p>
+            </article>
           </li>
         </ul>
       </section>
 
       <!--Barberos-->
-      <section class="barberos" id="barberos">
+      <section class="barberos " id="barberos">
         <div class="personas">
           <div class="persona">
             <div class="persona__imagen persona__imagen--carlos"></div>
@@ -177,7 +185,7 @@
       </section>
 
       <!--Contactenos-->
-      <section class="contactenos" id="agendarme">
+      <section class="contactenos " id="agendarme">
         <!--Calendario-->
         <div class="contactenos__calendario">
           <div class="calendar" id="calendar"></div>
@@ -248,7 +256,7 @@
       </section>
 
       <!--Acerca de nosotros-->
-      <section class="aboutme" id="aboutme">
+      <section class="aboutme " id="aboutme">
         <div class="aboutme">
           <h2 class="aboutme__titulo">Sobre la barbería</h2>
           <div class="aboutme-descripcion">
@@ -342,7 +350,7 @@
       </section>
 
       <!--Footer-->
-      <footer class="footer">
+      <footer class="footer ">
         <!--Enlace a las redes sociales-->
         <ul class="footer__redes">
           <li>
@@ -376,6 +384,9 @@
             alt="Banner"
             class="banner__footer"
           />
+          <p footer__copyright>
+            Copyright &copy Champions Barber. All rigth reserved
+          </p>
         </div>
         <!--Newsletter-->
         <div class="newsletter">
@@ -395,25 +406,27 @@
               id="newsletter__button"
             />
           </form>
+        
         </div>
         <!--Copyright-->
-        <p footer__copyright>
-          Copyright &copy Champions Barber. All rigth reserved
-        </p>
       </footer>
 
       <!--Botones fijos en la pantalla-->
-      <div class="botones">
+      <div class="botones-contacto">
         <a href="tel:3232322323" target="_blank"
-          ><img src="./img/telefono.png" alt="telefono" width="80px"
+          ><img src="./img/telefono.png" alt="telefono" class="boton"
         /></a>
         <a href="https://wa.link/kw9tla" target="_blank"
-          ><img src="./img/whatsapp.png" alt="Whatsapp" width="80px"
+          ><img src="./img/whatsapp.png" alt="Whatsapp" class="boton"
         /></a>
+        <a href="#"
+        ><img src="./img/flecha-hacia-arriba.png" alt="Ir arriba" class="boton"
+      /></a>
       </div>
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
     <!--Js Calendar-->
     <script
       type="text/javascript"
@@ -430,6 +443,5 @@
         console.log(calendar.value().format("LLL"));
       });
     </script>
-        <script type="text/javascript" src="./js/slide.js"></script>
   </body>
 </html>

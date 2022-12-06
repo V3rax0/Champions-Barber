@@ -1,3 +1,24 @@
-*{
-    box-sizing: border-box;
+.container {
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+
+.botones-contacto {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+}
+
+.boton {
+    width: 60px;
+    margin-bottom: 10px;
 }
