@@ -1,9 +1,15 @@
 .barberos {
-    width:;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
+    padding-top: 3rem;
+    justify-content: space-around;
+    padding: 5rem;
+    text-align: center;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .persona__imagen--carlos {
@@ -45,4 +51,29 @@
     color: #000000;
     font-size: 2rem;
     margin: 1rem 0;
+}
+
+
+@media screen and (min-width: 0) {
+    .persona {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .persona {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .barberos {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .barberos {
+        flex-direction: row;
+    }
 }
