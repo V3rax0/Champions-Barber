@@ -2,6 +2,7 @@
 ## Librerias Usadas
 - **EmailJS**
 - **MomentJS**
+- **Swiper**
 
 ## Metodologías
 - __BEM__

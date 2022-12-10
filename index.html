@@ -14,8 +14,11 @@
     <script type="text/javascript">
       emailjs.init("bnzMcoPO2phJIbqdM");
     </script>
-    <link rel="stylesheet" href="./css/normalize.css">
+      <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/head.css">
     <link rel="stylesheet" href="./css/slideshow.css">
@@ -29,7 +32,6 @@
   <body>
     <main>
       <!--Menu-->
-      
       <header class="head container">
         <a href="#"
           ><img
@@ -52,15 +54,65 @@
       </header>
 
       <!--Slide Show-->
-      <section class="slideshow container">
-
-        <div class="slidershow__atras botones-slide">&#60</div>
-        <div class="slidershow__adelante botones-slide">&#62</div>
-
-        <img src="./img/slideShow/slide1.jpg" alt="slide" class="slideshow__imgs" id="slidershow-img">
-          <h2 class="slideshow__titulo">Champions Barber</h2>
-          <h4 class="slideshow__lema">Cuidando tu estetica</h4>
-          <a href="#agendarme" class="slideshow__agendarme">Agendarme</a>
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="./img/slideShow/slide1.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Cuidando tu estetica</span>
+              <h2>
+                Champions Barber
+              </h2>
+              <a href="#agendarme" class="button">Agendarme</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./img/slideShow/slide2.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Cuidando tu estetica</span>
+              <h2>
+                Champions Barber
+              </h2>
+              <a href="#agendarme" class="button">Agendarme</a>
+            </div>
+          </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./img/slideShow/slide3.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Cuidando tu estetica</span>
+              <h2>
+                Champions Barber
+              </h2>
+              <a href="#agendarme" class="button">Agendarme</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./img/slideShow/slide4.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Cuidando tu estetica</span>
+              <h2>
+                Champions Barber
+              </h2>
+              <a href="#agendarme" class="button">Agendarme</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./img/slideShow/slide5.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Cuidando tu estetica</span>
+              <h2>
+                Champions Barber
+              </h2>
+              <a href="#agendarme" class="button">Agendarme</a>
+            </div>
+          </div>
+          </div>
+        </div>
+  
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
       </section>
 
       <!--Galeria-->
@@ -222,7 +274,7 @@
           </table>
         </div>
         <!--formulario contacto-->
-        <form action="" class="contactenos__formulario">
+        <form action="" class="contactenos__formulario" id="contactenos__formulario">
           <label class="contactenos__formulario__titulo" for="nombres"
             >Nombre</label
           >
@@ -252,7 +304,7 @@
             cols="30"
             rows="10"
           ></textarea>
-          <input type="submit" value="Enviar" />
+          <input type="submit" value="Enviar" id="enviar__form-contacto"/>
         </form>
       </section>
 
@@ -427,7 +479,24 @@
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
-    <script type="text/javascript" src="./js/slide.js"></script>
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!--Js Calendar-->
     <script
       type="text/javascript"

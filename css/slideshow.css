@@ -1,76 +1,110 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.slideshow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+}
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
 }
 
-.botones-slide {
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, .7);
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
 }
 
-.botones-slide:hover {
-    cursor: pointer;
-    transform: scale(1.2, 1.2);
-}
-
-.slidershow__atras {
-    left: 2%;
-    top: calc(80% - 70px);
-}
-
-.slidershow__adelante {
-    right: 2%;
-    top: calc(80% - 70px);
-}
-
-.slideshow__titulo {
-    color: #fdfdfd;
-    font-family: 'Pacifico', sans-serif;
-    font-size: 4em;
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    top:70%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
-
-.slideshow__lema {
-    color: #fdfdfd;
-    font-size: 2em;
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    top: 80%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
-
-.slideshow__agendarme {
-    color: #fdfdfd;
-    font-size: 2em;
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    top: 90%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    width: 100%;
-    transform: translate(-50%, -50%);
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
 }

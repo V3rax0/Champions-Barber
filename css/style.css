@@ -1,3 +1,12 @@
+
+html {
+    scroll-behavior: initial;
+}
+
+body{
+    font-family: 'Open sans', sans-serif
+}
+
 .container {
     padding-right: 4%;
     padding-left: 4%;
