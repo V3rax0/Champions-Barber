@@ -1,6 +1,16 @@
 .servicios {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    
+}
+
+.servicios__titulo {
+    color: #4F4C4C;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.25em;
 }
 
 .servicios__listado {
@@ -31,6 +41,11 @@
     padding: 0 15%;
 }
 
+.servicio__descripcion {
+    color: #666666;
+    line-height: 28px;
+}
+
 .servicio__precio {
     font-weight: 700;
     font-size: 3rem;
@@ -40,19 +55,14 @@
     margin-bottom: 1.25rem;
 }
 
-.servicio__descripcion {
-    color: var(--fuente-ceniza-claro);
-    line-height: 28px;
-}
-
 @media screen and (min-width: 1024px){
-    .planes__tarjetas {
+    .servicios__listado {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
     }
 
-    .tarjetas {
+    .servicio__elemento {
         max-width: 300px;
     }
 }
