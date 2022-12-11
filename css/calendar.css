@@ -80,6 +80,7 @@
 	border-radius:20px;
 	margin:auto;
     display: flex;
+    color: white;
 }
 .calendar{
     width: 100%;
@@ -89,6 +90,7 @@
     margin-left: 5%;
     margin-right: auto;
     border-radius: 30px;
+    color: white;
 }
 
 .contactenos__horario{
@@ -99,6 +101,7 @@
 	margin:auto;
     background-color: #424649;
     display: flex;
+    color: white;
 }
 
 form{
@@ -109,4 +112,5 @@ form{
 	margin:auto;
     display: block;
     background-color: #424649;
+    color: white;
 }
