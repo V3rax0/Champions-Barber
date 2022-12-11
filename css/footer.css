@@ -1,11 +1,8 @@
 .footer {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid #000000;
-    position: absolute;
 }
 
 .footer__redes {
@@ -16,8 +13,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.footer__banner img {
-    width: 100%;
 }
