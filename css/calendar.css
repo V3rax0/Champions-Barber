@@ -73,11 +73,3 @@
     color: var(--color-cell-disabled);
     cursor: not-allowed;
 }
-
-.contactenos__calendario{
-    width:500px;
-	padding: 30px;
-	border-radius:20px;
-	margin:auto;
-    display: flex;
-}
