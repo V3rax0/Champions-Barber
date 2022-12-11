@@ -1,12 +1,14 @@
 .galeria {
+    box-sizing: border-box;
     margin: 50px auto 50px;
     display: grid;
+    align-items: center;
+    justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
 }
 
 .galeria__img {
-    width: 100%;
     cursor: pointer;
     transition: 1s;
 }

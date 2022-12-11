@@ -81,32 +81,3 @@
 	margin:auto;
     display: flex;
 }
-.calendar{
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 30px;
-    padding: 30px;
-    margin-left: 5%;
-    margin-right: auto;
-    border-radius: 30px;
-}
-
-.contactenos__horario{
-    width:300px;
-    justify-content: center;
-	padding: 20px;
-	border-radius:10px;
-	margin:auto;
-    background-color: #424649;
-    display: flex;
-}
-
-form{
-    width:300px;
-    justify-items: auto;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-    display: block;
-    background-color: #424649;
-}
