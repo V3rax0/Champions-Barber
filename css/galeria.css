@@ -1,14 +1,32 @@
 .galeria {
     box-sizing: border-box;
-    margin: 50px auto 50px;
-    display: grid;
-    align-items: center;
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 30px;
+    display: flex;
+    padding: 65px 0;
+    flex-wrap: wrap;
 }
 
 .galeria__img {
     cursor: pointer;
-    transition: 1s;
+    width: 100%;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column .galeria__img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .column {
+        flex: 100%;
+    }
 }
