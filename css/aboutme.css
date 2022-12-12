@@ -1,0 +1,66 @@
+.aboutme-secction {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutme__titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.aboutme-descripcion {
+    display: flex;
+}
+
+.aboutme-descripcion img {
+    max-width: 100px;
+    max-height: 120px;
+    margin-right: 10px;
+}
+
+.aboutme__descripcion {
+
+}
+
+.aboutme__mision, .aboutme__vision {
+    display: flex;
+    margin: 30px auto;
+}
+
+.mision-vision__titulo {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.vision__descripcion {
+    
+}
+
+.ubicacion {
+
+}
+
+.ubicacion__titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ubicacion___descripcion {
+    text-align: center;
+}
+
+.mapa {
+
+}
+
+.video {
+
+}
