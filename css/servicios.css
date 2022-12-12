@@ -16,13 +16,16 @@
 .servicios__listado {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .servicio__elemento {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     max-width: 300px;
     margin-bottom: 2rem;
@@ -59,10 +62,10 @@
     .servicios__listado {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
     }
 
     .servicio__elemento {
         max-width: 300px;
     }
 }
+
