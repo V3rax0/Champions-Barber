@@ -14,3 +14,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.footer__banner img {
+    width: 100%;
+}

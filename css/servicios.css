@@ -1,7 +1,6 @@
 .servicios {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    
 }
 
 .servicios__titulo {
@@ -24,7 +23,6 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     max-width: 300px;
     margin-bottom: 2rem;
@@ -41,7 +39,7 @@
 }
 
 .servicio__contenido {
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 .servicio__descripcion {
