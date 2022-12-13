@@ -18,10 +18,6 @@
     max-width: 300px;
     font-family: sans-serif;
 }
-.contactenos__calendario{
-    padding-left: 8rem;
-    padding-right: 3rem;
-}
 
 .calendar__header {
     color: white;
@@ -38,17 +34,6 @@
     border: none;
     cursor: pointer;
     padding: 0 5px;
-}
-.contactenos__horario{
-    margin-top: 2rem;
-    margin-left: 8rem;
-    padding-right: 3rem;
-}
-
-form.contactenos__formulario{
-    padding-top: 3rem;
-    padding-left: 8rem;
-    padding-right: 3rem;
 }
 
 .grid__header, .grid__body {
