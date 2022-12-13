@@ -23,7 +23,8 @@
 
 .aboutme__img{
     float: left;
-    margin: 5px;  width: 250px; 
+    margin: 5px auto;
+    width: 250px; 
     display: flex;
 }
 

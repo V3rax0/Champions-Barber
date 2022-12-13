@@ -1,21 +1,6 @@
-@media screen and (max-width:320px){
+
+@media (max-width: 1024px) {
   .aboutme-secction {
     width: 100%;
+  }
 }
-  }
-@media screen and (min-width:480px){
-  .aboutme-secction {
-    width: 100%;
-}
-  }
-@media screen and (min-width:768px){
-  .aboutme-secction {
-    width: 100%;
-}
-  }
-@media screen and (min-width:1024px){
-    
-  }
-@media screen and (min-width:1200px){
-    
-  }
