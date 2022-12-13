@@ -21,8 +21,10 @@
     margin-right: 10px;
 }
 
-.aboutme__descripcion {
-
+.aboutme__img{
+    float: left;
+    margin: 5px;  width: 250px; 
+    display: flex;
 }
 
 .aboutme__mision, .aboutme__vision {
