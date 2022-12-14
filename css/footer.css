@@ -33,7 +33,7 @@
 }
 
 .newsletter__legend {
-  margin-bottom: 20px
+  margin: 20px auto;
 }
 
 .newsletter_email {

@@ -232,9 +232,20 @@
       <!--Calendario-->
       <div class="contactenos__calendario">
         <div class="calendar" id="calendar"></div>
-        <span>Dia seleccinado</span>
-        <span>Dia disponible</span>
-        <span>Dia no disponible</span>
+        <div class="caledar-dias">
+          <div class="dias">
+            <p class="dia-seleccionado"></p>
+            <p>Dia Seleccionado</p>
+          </div>
+          <div class="dias">
+            <p class="dia-disponible"></p>
+            <p>Dia disponible</p>
+          </div>
+          <div class="dias">
+            <p class="dia-nodisponible"></p>
+            <p>Dia No Disponible</p>
+          </div>
+        </div>
       </div>
               <!--horario-->
               <div class="tg-wrap">
@@ -266,27 +277,28 @@
                 </table>
               </div>
       <!--formulario contacto-->
-      <form action="" class="contactenos__formulario" id="contactenos__formulario">
+      <form class="contactenos__formulario" id="contactenos__formulario">
         <label class="contactenos__formulario__titulo" for="nombres">Nombre</label>
         <input type="text" name="nombres" class="contactenos__formulario__input"
           id="contactenos__formulario__titulo__nombres" />
-        <fieldset class="servicios">
           <h2 class="contactenos__formulario__titulo">Servicio</h2>
-          <select>
-            <option value="">Cabello</option>
-            <option value="">Barba</option>
-            <option value="">Cabello + Barba</option>
-            <option value="">Delineado de Barba</option>
-            <option value="">Tinte de Barba</option>
-            <option value="">Rasurado de Cabeza</option>
-          </select>
-        </fieldset>
+          <div class="content-select">
+            <select>
+              <option>Cabello</option>
+              <option>Barba</option>
+              <option>Cabello + Barba</option>
+              <option>Delineado de Barba</option>
+              <option>Tinte de Barba</option>
+              <option>Rasurado de Cabeza</option>
+            </select>
+            <i></i>
+          </div>
         <label for="telefono">Telefono</label>
         <input type="tel" name="telefono" id="contactenos__formulario__titulo__nombres"
           class="contactenos__formulario__input" />
         <label for="detalles">Detalles</label>
         <textarea name="detalles" id="contactenos__formulario__titulo__detalles" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar" id="enviar__form-contacto" />
+        <input type="submit" value="Enviar" id="enviar__form-contacto" class="contactenos__formulario__submit"/>
       </form>
     </section>
 

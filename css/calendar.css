@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color-bg-calendar: #27243d;
+    --color-bg-calendar: #6f7281;
     --color-cell: #e3e3e3;
     --color-cell-disabled: #424649;
 }
@@ -63,7 +63,7 @@
 
 .grid__cell--selected {
     color: var(--color-bg-calendar);
-    background-color: white;
+    background-color: #0b5688;
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
