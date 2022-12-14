@@ -1,6 +1,30 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contactenos {flex-direction: column;}
+  .aboutme-secction  {width: 100%;}
+  .banner__footer {width: 100%;}
+}
 
-@media (max-width: 1024px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .aboutme-secction  {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .aboutme-secction  {width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .aboutme-secction {
-    width: 100%;
+    width: 80%;
   }
+
+  .banner__footer {width: 500px;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .aboutme-secction {width: 80%;}
 }

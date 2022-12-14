@@ -22,8 +22,8 @@
   align-items: center;
 }
 
-.footer__banner img {
-  width: 100%;
+.banner__footer {
+  width: 500px;
 }
 
 .newsletter__form {
