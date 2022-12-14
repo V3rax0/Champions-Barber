@@ -43,6 +43,7 @@
 .servicio__contenido {
     padding: 0 10%;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
 }
