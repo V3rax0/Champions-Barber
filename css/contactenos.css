@@ -33,6 +33,7 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #0b5688;
+  margin-left: 1.5rem;
 }
 
 .dia-disponible {
@@ -51,6 +52,7 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #636666;
+  margin-left: 1.5rem;
 }
 
 .tg {
@@ -87,6 +89,7 @@
   text-align: left;
   vertical-align: top;
 }
+
 @media screen and (max-width: 767px) {
   .tg {
     width: auto !important;
@@ -99,6 +102,16 @@
     -webkit-overflow-scrolling: touch;
   }
 }
+input.contactenos__formulario__submit{
+  margin-top: 1.5rem;
+}
+h2.contactenos__formulario__titulo{
+  padding-top: 1rem;
+}
+
+.content-select{
+  padding-bottom: 1.5rem;
+}
 
 .contactenos__formulario {  
     width: 50%;
@@ -108,7 +121,6 @@
 
 .contactenos__formulario__titulo {
 }
-
 
 .content-select{
 	max-width: 250px;
@@ -159,7 +171,6 @@
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 50px;
-
 }
 
 .contactenos__formulario__submit {
