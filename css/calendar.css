@@ -5,9 +5,9 @@
 }
 
 :root {
-    --color-bg-calendar: #2f303a;
+    --color-bg-calendar: #292a3a;
     --color-cell: #e3e3e3;
-    --color-cell-disabled: #777f85;
+    --color-cell-disabled: #a1a8ad;
 }
 
 .calendar {
