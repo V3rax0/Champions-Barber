@@ -2,6 +2,9 @@
     display: flex;
     padding: 65px 0;
     flex-wrap: wrap;
+    line-height: 0px;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
 }
 
 .galeria__img {
