@@ -10,10 +10,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .caledar-dias {
-  border: 2px solid purple;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1em auto;
 }
 
 .dia-seleccionado {
@@ -158,7 +161,7 @@ h2.contactenos__formulario__titulo{
 	display: block;
 	border-left:4px solid #a4f4ff;
 	border-bottom:4px solid #3d40ff;
-	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transform: rotate(-45deg);
 	transition: all 0.25s ease;
 }
  
