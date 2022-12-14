@@ -1,6 +1,9 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .contactenos {flex-direction: column; width: 100%;}
+  .contactenos__formulario {
+    width: 90%;
+  }
   .aboutme-secction  {width: 100%;}
   .footer {flex-direction: column;}
   .banner__footer {width: 100%;}
