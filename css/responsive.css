@@ -11,14 +11,19 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .contactenos {width: 100%;}
+  .contactenos {width: 100%; flex-wrap: wrap;}
+  .contactenos__formulario {width: 40%;}
   .aboutme-secction  {width: 100%;}
   .footer {flex-direction: column;}
+  .contactenos__formulario {
+    width: 90%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .contactenos {width: 100%;}
+  .contactenos {width: 100%; }
+  .contactenos__formulario {width: 50%;}
   .aboutme-secction  {width: 100%;}
   .footer {flex-direction: column;}
 } 
@@ -26,9 +31,8 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .contactenos {width: 80%;}
-  .aboutme-secction {
-    width: 80%;
-  }
+  .contactenos__formulario {width: 40%;}
+  .aboutme-secction {width: 80%;}
   .footer {flex-direction: column;}
   .banner__footer {width: 300px;}
 } 
@@ -36,6 +40,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .contactenos {width: 80%;}
+  .contactenos__formulario {width: 40%;}
   .aboutme-secction {width: 80%;}
   .banner__footer {width: 500px;}
   .footer {flex-direction: row;}
